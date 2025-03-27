@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title class="titulo"> Urbanizando-se</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/ font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:ital,wght@0,336;1,336&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:ital,wght@0,365;1,365&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+ 
+    <header>
+        
+        <DIV class="botao.esquerda">
+<a> Atividades</a>
+<a> Provas</a>
+<a>Projetos</a>
+</DIV>
+
+        <div class="hello-kitty">
+        
+            <h1 class="nome">Biblioteca</h1>
+
+        </div>
+
+        <div class="caixa-pesquisa">
+
+        <input type="text" class="texto-pesqu" placeholder="Pesquisar" id="search" name="search" required >
+
+        <a href="#" class="icon-pesqu">
+
+        <img class="icon-pesquisa" src="icon-pesquisa.png" alt="Lupa">
+        </a>
+
+        </div>
+
+<a href="#" class="btn-abrir" onclick="abrirMenu()"> <img src="icon-menu.png" alt="menu"> </a>
+
+<nav id="menu">
+
+<a href="#" onclick="fecharMenu()" > <img src="icon-menu.png" alt="menu"> </a>
+    
+<a class="menu" href="comupor.html#oportunidades">Oportunidades</a>
+
+<a class="menu" href="comupor.html#comunidade">Comunidades</a>
+
+<a class="menu" href="comupor.html#contatos">Contatos</a>
+
+</nav>
+
+
+</header>
+
+
+nav{
+
+    height: 100%;
+    width: 0px;
+    background-color: #214427;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: widht 0.3s;
+}
+
+nav a{
+    padding: 20px 0;
+    color: #9dc9a4;
+    font-size: 25px;
+    display: block;
+    padding: 9px 52px 12px 58px ;
+}
+
+nav a:hover{
+    color: #214427;
+    background-color: #9dc9a4;
+}
+
+main{
+    padding: 10px;
+    transition: margin-left 0.5s;
+}
+
+.boxs h2{
+    color: #b6e9be;
+    margin-bottom: 20px;
+ }
+
+ .boxs ul li{
+    margin:10px 0px;
+    list-style: none;
+ }
+
+ .boxs ul li a{
+    color:#e5f7e7;
+    text-decoration: none;
+ }
+
+ .boxs ul li a:hover {
+    color:#9dc9a4;
+ }
+
+ @media screen and (min-width: 768px) {
+
+    .hello-kitty {
+        display: flex;
+        align-items: center;
+        margin: -3% 0;
+    }
+
+    .nome {
+        padding: 0 86px;
+        font-size: 70px;
+        color: #ffffff;
+        font-family: "oswald", sans-serif;
+    }
+
+    .caixa-pesquisa {
+        height: 68px;
+
+    }
+
+}
